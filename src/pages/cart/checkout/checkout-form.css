@@ -1,0 +1,48 @@
+.checkout-form {
+    background-color: rgba(128, 128, 128, 0.558);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.checkout-form .checkout-form-innner {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 0 grey;
+    text-align: left;
+}
+
+.checkout-form .checkout-form-innner input {
+    font-size: 17px;
+    padding: 5px 6px;
+    outline: none;
+}
+
+.checkout-form p {
+    font-size: 20px;
+}
+
+.checkout-form button {
+    margin: 5px;
+    font-size: 17px;
+}
+
+.checkout-btns {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+}

@@ -9,10 +9,23 @@
     margin: 10px
 }
 
-.cart-page .checkout-btn {
+.cart-page .total-price {
+    color: #3d4575;
+    font-weight: bold;
+}
+
+.cart-page .checkout-and-price {
     width: 80vw;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 10px;
+}
+
+.cart-page .checkout-and-price button{
+    padding: 10px 15px;
+    background-color: #3d4575;
+    color:white;
+    font-weight: bold;
 }
