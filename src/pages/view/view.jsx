@@ -16,7 +16,11 @@ const ViewPage = () => {
                         description={item.description}
                         price={item.price}
                         imgUrl={item.imageUrl}
-                        cartBtnOnClick={() => setCart([...cart, item])}
+                        cartBtnOnClick={() => {
+                            if (!cart.some(cartItem => cartItem.id === item.id)) {
+                                setCart([...cart, item])
+                            }
+                        }}
                         cartBtnText={'Add to cart'}
                     />
                 )

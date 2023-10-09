@@ -1,0 +1,18 @@
+.cart-page .cart-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-page .cart-grid .item-card {
+    margin: 10px
+}
+
+.cart-page .checkout-btn {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
