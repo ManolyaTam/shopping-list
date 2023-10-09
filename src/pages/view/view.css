@@ -1,0 +1,11 @@
+.view-page {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-page .item-card {
+    margin: 10px
+}
