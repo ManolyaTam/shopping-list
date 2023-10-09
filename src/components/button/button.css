@@ -1,0 +1,27 @@
+.button button {
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    outline: none
+}
+
+.button.active button {
+    background-color: #3d4575;
+    color: white;
+}
+
+.button.borderless button {
+    border: none;
+}
+
+.button.underlined button {
+    text-decoration: underline;
+}
+
+.button button:hover,
+.button button:active {
+    color: black;
+    background-color: #f1f1f1;
+}
