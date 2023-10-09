@@ -17,3 +17,15 @@
 .navbar h2 {
     margin: 0;
 }
+
+.navbar .nav-btns {
+    display: flex;
+}
+
+.navbar .nav-btns .button {
+    margin: 10px
+}
+
+.navbar .nav-btns .button button {
+    padding: 10px 15px;
+}

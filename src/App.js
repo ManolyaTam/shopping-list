@@ -6,10 +6,10 @@ import ViewPage from './pages/view/view';
 
 export const pageContext = createContext();
 function App() {
-  const [page, setPage] = useState('view');
+  const [page, setPage] = useState('view'); // values: view, cart
   return (
     <div className="App">
-      <pageContext.Provider value={setPage}>
+      <pageContext.Provider value={{page, setPage}}>
         <NavBar />
         {page === 'view' && <ViewPage />}
         {page === 'cart' && <CartPage />}
