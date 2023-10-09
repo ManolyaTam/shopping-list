@@ -1,0 +1,26 @@
+.item-card {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    padding: 10px;
+    width: 270px;
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px #e3e3e3;
+}
+
+.item-card h4,
+.item-card p {
+    font-size: 18px;
+}
+
+.item-card .item-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+}
