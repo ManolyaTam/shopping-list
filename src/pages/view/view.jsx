@@ -8,6 +8,7 @@ const ViewPage = () => {
             {shoppingItems.map((item) => {
                 return (
                     <ItemCard
+                        key={'viewpage_itemCard' + item.id}
                         name={item.name}
                         description={item.description}
                         price={item.price}
