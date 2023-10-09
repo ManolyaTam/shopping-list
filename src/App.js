@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, createContext } from 'react'
+import NavBar from './components/navbar/navbar'
 import CartPage from './pages/cart/cart';
 import ViewPage from './pages/view/view';
 
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <pageContext.Provider value={setPage}>
-        <h2>My Shopping List</h2>
+        <NavBar />
         {page === 'view' && <ViewPage />}
         {page === 'cart' && <CartPage />}
       </pageContext.Provider>
