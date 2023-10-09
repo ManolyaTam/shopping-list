@@ -1,4 +1,6 @@
 import './item-card.css';
+import Button from '../button/button';
+import { ShoppingCartOutlined } from '@ant-design/icons';
 
 const ItemCard = ({ name, description, price, imgUrl }) => {
     return (
@@ -7,7 +9,15 @@ const ItemCard = ({ name, description, price, imgUrl }) => {
             <div className="item-details">
                 <h4>{name}</h4>
                 <p>{description}</p>
-                <p>{price}</p>
+                <div className="item-card-bottom">
+                    <p className='price'>${price}</p>
+                    <Button label={
+                        <div className='add-to-cart-btn-content'>
+                            <ShoppingCartOutlined style={{ fontSize: 20 }} />
+                            <p>Add to cart</p>
+                        </div>
+                    } />
+                </div>
             </div>
         </div>
     )

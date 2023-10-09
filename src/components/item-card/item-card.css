@@ -24,3 +24,28 @@
     height: 100%;
     justify-content: flex-end;
 }
+
+.item-card .item-card-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.item-card .add-to-cart-btn-content {
+    display: flex;
+    align-items: center;
+}
+
+.item-card .add-to-cart-btn-content p {
+    margin: 0 0 0 10px;
+}
+
+.item-card:has(.add-to-cart-btn-content) .button {
+    margin-left: 20px
+}
+
+.item-card .price {
+    color: #3d4575;
+    font-weight: bold;
+}
