@@ -16,7 +16,8 @@ const ViewPage = () => {
                         description={item.description}
                         price={item.price}
                         imgUrl={item.imageUrl}
-                        addToCart={() => setCart([...cart, item])}
+                        cartBtnOnClick={() => setCart([...cart, item])}
+                        cartBtnText={'Add to cart'}
                     />
                 )
             })}

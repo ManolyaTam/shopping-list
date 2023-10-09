@@ -32,16 +32,16 @@
     justify-content: flex-end;
 }
 
-.item-card .add-to-cart-btn-content {
+.item-card .cart-btn-content {
     display: flex;
     align-items: center;
 }
 
-.item-card .add-to-cart-btn-content p {
+.item-card .cart-btn-content p {
     margin: 0 0 0 10px;
 }
 
-.item-card:has(.add-to-cart-btn-content) .button {
+.item-card:has(.cart-btn-content) .button {
     margin-left: 20px
 }
 
