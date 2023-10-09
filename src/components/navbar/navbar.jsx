@@ -11,7 +11,7 @@ const NavBar = () => {
     const { page: currentPage, setPage } = useContext(pageContext);
     return (
         <div className="navbar">
-            <h2>Shopping List</h2>
+            <h2 onClick={() => {setPage('view')}}>Shopping List</h2>
             <div className='nav-btns'>
                 {pages.map((page) =>
                     <Button
