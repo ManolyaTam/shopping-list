@@ -2,7 +2,8 @@ import './item-card.css';
 import Button from '../button/button';
 import { ShoppingCartOutlined } from '@ant-design/icons';
 
-const ItemCard = ({ name, description, price, imgUrl }) => {
+const ItemCard = (props) => {
+    const { name, description, price, imgUrl, addToCart } = props;
     return (
         <div className='item-card'>
             <img className="item-img" src={imgUrl} alt="" width={250} />
@@ -11,12 +12,14 @@ const ItemCard = ({ name, description, price, imgUrl }) => {
                 <p>{description}</p>
                 <div className="item-card-bottom">
                     <p className='price'>${price}</p>
-                    <Button label={
-                        <div className='add-to-cart-btn-content'>
-                            <ShoppingCartOutlined style={{ fontSize: 20 }} />
-                            <p>Add to cart</p>
-                        </div>
-                    } />
+                    <Button
+                        onClick={addToCart}
+                        label={
+                            <div className='add-to-cart-btn-content'>
+                                <ShoppingCartOutlined style={{ fontSize: 20 }} />
+                                <p>Add to cart</p>
+                            </div>
+                        } />
                 </div>
             </div>
         </div>
